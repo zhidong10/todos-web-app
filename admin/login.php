@@ -36,6 +36,7 @@ $row=mysql_fetch_array($result);
 if($row){
 	setcookie('email',$row['email']);
     setcookie('token',$row['pwd']);
+    $_SESSION['uname'] = $row['email'];
 	echo reszon(true, "登录成功！");
 	exit;
 }
