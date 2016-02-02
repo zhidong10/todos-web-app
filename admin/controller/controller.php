@@ -4,7 +4,7 @@
 	header("Content-Type: text/html; charset=UTF-8");
 	require_once "../views/views.php";
 	require_once "../module/module.php";
-	require_once("../common-function.php");
+	require_once("../core/common-function.php");
 	$sql = loginSel();
 	$view = new VIEWS();
 	$model = new Model();

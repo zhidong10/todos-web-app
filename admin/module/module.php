@@ -1,5 +1,5 @@
 <?php
-require_once '../conn.php';
+require_once './conn.php';
 class Model{
 
 	public function getData($sql){
@@ -30,7 +30,7 @@ class Model{
 		$result=mysql_query($sql);
 		$row=mysql_fetch_array($result);
 		if($row){
-			return ture;
+			return true;
 		}else{
 			return false;
 		}

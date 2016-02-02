@@ -1,8 +1,8 @@
 <?php
 error_reporting(E_ALL^E_NOTICE);
 session_start();
-require_once '/conn.php';
-require_once("common-function.php");
+require_once './conn.php';
+require_once("./core/common-function.php");
 
 //判断用户名不低于字数
 $email=trim($_POST["email"]);

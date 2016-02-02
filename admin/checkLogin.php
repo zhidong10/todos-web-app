@@ -1,7 +1,6 @@
 <?php
-require_once '/conn.php';
-require_once("common-function.php");
-require_once "module.php";
+require_once("./core/common-function.php");
+require_once "./module/module.php";
 $sql = loginSel();
 $model = new Model();
 if($sql && $model->isLogin($sql)){
