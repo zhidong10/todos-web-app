@@ -1,9 +1,9 @@
 <?php
-require_once './conn.php';
+require_once 'D:\work\test\mygit\todos-web-app\admin\conn.php';
 class Model{
 
 	public function getData($sql){
-		$result=mysql_query($sql);
+		$result = mysql_query($sql);
 		$arr = array();
 		$i = 0;
 		while($row = mysql_fetch_assoc($result)){

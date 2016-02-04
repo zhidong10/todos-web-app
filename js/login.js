@@ -1,4 +1,4 @@
-define(['jquery',"lib/jquery.validate/jquery.validate.min.js"],function($){
+define(['jquery',"jquery.validate"],function($){
   var $ = jQuery = $;
   $("#imgCode").delegate("#checkImg img,a","click",function(){
     $("#checkImg img").attr("src",'admin/getimg.php?'+new Date().getTime());
@@ -17,7 +17,7 @@ define(['jquery',"lib/jquery.validate/jquery.validate.min.js"],function($){
               pwd = $.trim($("#inputPassword").val()),
               code = $.trim($("#checkCode").val()),
               rember = $.trim($("#rember").val())||0;
-            //请求注册
+            //请求登录
            $.post("admin/login.php",{email:email,pwd:pwd,code:code,rember:rember},function(data){
               //todos注册成功
               if(data&& data.result =="success"){

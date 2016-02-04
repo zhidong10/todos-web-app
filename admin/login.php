@@ -39,6 +39,8 @@ if($row){
     $_SESSION['uname'] = $row['email'];
 	echo reszon(true, "登录成功！");
 	exit;
+}else{
+    echo reszon(false, "用户名或密码错误，登录登录失败！");
 }
 mysql_close($conn);
 
